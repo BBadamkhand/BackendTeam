@@ -54,7 +54,7 @@ public class OfferEndPoint {
 
     }
 
-    @DisplayName("Post malformed request data")
+    @DisplayName("Post malformed request data ")
     @Test
     public void postC (){
         Map<String, Object> requestBody = new LinkedHashMap<>();
