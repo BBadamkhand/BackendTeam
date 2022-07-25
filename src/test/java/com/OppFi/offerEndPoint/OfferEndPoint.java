@@ -54,7 +54,7 @@ public class OfferEndPoint {
 
     }
 
-    @DisplayName("Get Offer")
+    @DisplayName("Post malformed request data")
     @Test
     public void postC (){
         Map<String, Object> requestBody = new LinkedHashMap<>();
@@ -70,7 +70,7 @@ public class OfferEndPoint {
                 .when()
                 .post(Environment.TARGET_URL)
                 .then()
-                .statusCode(201)
+                .statusCode(400)
                 .contentType("application/json")
                 .headers("Content-Type", "application/json", "x-api-key",Environment.API_KEY);
 
